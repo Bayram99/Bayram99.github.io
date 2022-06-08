@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+* {box-sizing: border-box}
+html {
+zoom: 80%;
+}
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;} 
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;   
+  /*Used to be padding 16px*/
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+.prev {
+	left: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+/* On hover, add a grey background color */
+.prev, .next {     
+	/*Used to be .prev:hover, .next:hover */
+  /*background-color: #f1f1f1;*/
+  color: black;
+}
+</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<!-- <div id="intro">
+						<h1>Bayram's <br />
+						Portfolio</h1>
+						<p>Hello world, its me>@ajlkn</a> for <a href="#">Bayram</a><br />
+						and released for free under the <a href="#">Bayram's license</a>.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div> -->
+
+				<!-- Header -->
+					<!-- <header id="header">
+						<a href="index.html" class="logo">Massively</a>
+					</header> -->
+
+				<!-- Nav -->
+				<!-- 	<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">This is Massively</a></li>
+							<li><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major"><h1><a href="index.html">My 
+								 Portfolio</a> <br/> </h1>
+									<span class="date"></span>
+
+									<h3 style="margin: 5rem 0 2rem 0;font-size: 200%; font-weight:normal; font-family:initial !important;;">IBIN / SMART BIN</h3>
+									<p>The aim of our product is to show how viable our concept is and that smart bins can really be the future. This is especially important looking at the current market, cuts to the waste management and current bin strikes.
+The system can also be implemented to smaller office bins where especially in a big office complex can save time and money due to the cleaners only going to bins that are full. This system can easily be implemented into many types of bins and is universal.</br> 
+
+<b>The following idea was award winning project in Birmingham City University Innovation Fest 2019.</b>
+</p>
+								</header>
+								<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <!-- First slide add paper prototype -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>  
+    <video width="100%"  controls>
+  <source src="BinRotating.mp4" type="video/mp4">
+    <!-- <img src="BinRotating.mp4" style="width:100%"> -->
+    <!-- <div class="text">Caption Text</div> -->
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <video width="100%"  controls muted>
+  <source src="IBinConstruction.mp4" type="video/mp4">
+    <!-- <img src="UXSlide2.png" style="width:100%;"> -->
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+
+  <!-- <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="UXSlide3.png" style="width:100%; "> -->
+    <!-- <div class="text">Caption Three</div> -->
+  <!-- </div> -->
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+</div>
+
+
+<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+								<header class="major">
+								<p style="margin: 4rem 0 0 0;"> <b>Slide 2</b> shows the coding for the Bin was successful, next stage was improving the architecture of the bin itself. This project idea was analysed using <b> SWOT analysis</b>, cost managed using <b>Financial planning</b> and promoted using different <b>marketing plans.</b> </p>
+								</header>
+							</article>
+
+
+						</div>
+					</div>
+				</body>
+				</html>
