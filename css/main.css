@@ -3924,6 +3924,7 @@ input[name="r"]{
 
 			#nav {
 				/*display: none;*/
+				display: block;
 			}
 			.logo{
 				margin-bottom: 3rem;
