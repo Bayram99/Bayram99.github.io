@@ -3923,8 +3923,6 @@ input[name="r"]{
 		@media screen and (max-width: 980px) {
 
 			#nav {
-				/*display: none;*/
-				display: block;
 			}
 			.logo{
 				margin-bottom: 3rem;
